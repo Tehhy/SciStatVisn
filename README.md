@@ -35,9 +35,9 @@ The pipeline expects an Excel file (`.xlsx`). To ensure smooth execution, your d
 ### Smart Schema Normalization & Positional Fallback
 - **Case-Insensitive & Whitespace Agnostic**: Column headers are automatically stripped of whitespace and converted to lower case.
 - **Positional Fallback**: If unrecognized column names are supplied, the pipeline will fallback to assigning:
-  - Column $1 \to \text{subject\_id}$
-  - Column $2 \to \text{condition}$
-  - Column $3 \to \text{metric\_value}$
+  - Column 1 $\to$ subject_id
+  - Column 2 $\to$ condition
+  - Column 3 $\to$ metric_value
   
 > ⚠️ **Warning**: Positional assignment triggers a standard `UserWarning`. Ensure column ordering is maintained if customized headers are omitted.
 
